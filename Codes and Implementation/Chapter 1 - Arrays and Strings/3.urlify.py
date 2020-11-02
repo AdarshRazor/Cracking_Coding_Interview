@@ -1,5 +1,6 @@
 '''
 Replace white space with %20
+level: easy
 '''
 
 

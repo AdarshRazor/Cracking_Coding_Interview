@@ -1,5 +1,6 @@
 '''
 Checking if the string is rotation or not
+level: easy
 '''
 def leftrotate(s, d):
     tmp = s[d : ] + s[0 : d]

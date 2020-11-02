@@ -1,5 +1,6 @@
 '''
 Check all the strings are unique or not
+level: easy
 '''
 
 def uniqueornot(inp):

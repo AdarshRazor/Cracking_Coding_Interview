@@ -1,3 +1,8 @@
+'''
+Check the permutation of palindrome
+level: easy
+'''
+
 def isPerOfPalindrome(stringA):
     Letters = {}
     #arranging the words so we can get the count

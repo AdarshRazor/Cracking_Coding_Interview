@@ -1,11 +1,15 @@
 '''
 Check the permutation of both strings
+level: easy
 '''
 
 from collections import Counter
 
 def isPermutation(stringA, stringB):
-  return Counter(stringA) == Counter(stringB)
+  if (Counter(stringA) == Counter(stringB)):
+    print(stringA,"and",stringB,"are permutation of each other")
+  else:
+    print(stringA,"and",stringB,"are NOT permutation of each other")
 
 
 print (isPermutation('abc','cba'))

@@ -1,5 +1,6 @@
 '''
 Changing the row and column to 0 if the element is 0
+level: medium
 '''
 # change all elements of row x and column y to -1
 def changeRowColumn(mat, M, N, x, y):

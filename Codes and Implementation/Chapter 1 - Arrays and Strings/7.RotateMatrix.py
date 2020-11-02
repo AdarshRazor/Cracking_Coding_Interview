@@ -1,9 +1,11 @@
 '''
 Rotate the matrix by 90 degree
+level: medium
 '''
 
 def rotate90Clockwise(A): 
     N = len(A[0]) 
+    #itterate half the time
     for i in range(N // 2): 
         for j in range(i, N - i - 1): 
             temp = A[i][j] 
