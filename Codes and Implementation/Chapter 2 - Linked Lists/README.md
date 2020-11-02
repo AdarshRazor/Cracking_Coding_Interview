@@ -20,4 +20,5 @@ To create a linked list we just need to follow few things.
 ### Deleting a Node 
 
 We find the previous node *prev* and set *prev.next* equal to *n.next*. 
+
 If the list is doubly linked, we must also update *n.next* to set *n.next.prev* equal to *n.prev*. 
