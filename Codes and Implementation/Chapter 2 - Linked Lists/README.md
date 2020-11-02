@@ -5,6 +5,8 @@ Elements are linked using pointers and linked to one another.
 
 > This means that if you'd like to find the Kth element in the list, you will need to iterate through K elements. 
 
+---
+
 ### Creating the Simple linked list
 
 To create a linked list we just need to follow few things.
@@ -17,8 +19,12 @@ To create a linked list we just need to follow few things.
 
 > Inseting at beg O(1). Inserting at end O(n).
 
+---
+
 ### Deleting a Node 
 
-We find the previous node *prev* and set *prev.next* equal to *n.next*. 
+To delete the node from the linked list.
 
-If the list is doubly linked, we must also update *n.next* to set *n.next.prev* equal to *n.prev*. 
+* We find the previous node **prev** and set **prev.next** equal to **n.next**. 
+* If the list is doubly linked, we must also update **n.next** to set **n.next.prev** equal to **n.prev**. 
+
