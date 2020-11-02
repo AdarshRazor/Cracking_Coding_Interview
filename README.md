@@ -4,4 +4,4 @@
 ### Level in the program helps you to keep track of what kind of problem you are solving
 ### Easy to understand as I have explained each line of code.
 
-> Feel free to ping me on [mail](gmailto:adarshanshu7@gmail.com) for any doubt
+> Feel free to ping me on [adarshanshu7@gmail.com](mail:adarshanshu7@gmail.com) for any doubt
