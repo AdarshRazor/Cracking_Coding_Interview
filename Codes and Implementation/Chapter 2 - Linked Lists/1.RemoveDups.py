@@ -23,10 +23,28 @@ class LinkedList:
         while Curr_Node!=None:
             print("(",Curr_Node.data,end=" ) --> ")
             Curr_Node=Curr_Node.next
+        print("\n")
+
+    def deletenode(self,data):
+        if self.head.data==data:
+            self.head=self.head.next
+            return
+        Curr_Node=self.head
+        while Curr_Node!=None:
+            if Curr_Node.data==data:
+                break
+            prev=Curr_Node
+            Curr_Node=Curr_Node.next
+        if Curr_Node==None:
+            return
+        prev.next=Curr_Node.next
+
 
 ll=LinkedList()
 
 ll.appendnode(9)
 ll.appendnode(7)
 ll.appendnode(2)
+ll.printnode()
+ll.deletenode(7)
 ll.printnode()
