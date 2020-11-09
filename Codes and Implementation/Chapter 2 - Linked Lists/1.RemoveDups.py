@@ -40,20 +40,17 @@ class LinkedList:
         prev.next=Curr_Node.next
 
     def checkdups(self):
-        lis=[]
-        temp=self.head
-        prev=None
-        while temp!=None:
-            if temp.data in lis:
-                prev.next=temp.next
-                temp=temp.next
+        dups={}
+        node = self.head
+        while(node!=None):
+            if node.data in dups.keys():
+                node.data=node.next.data
+                node.next=node.next.next
             else:
-                lis.append(temp.data)
-                prev=temp
-                temp=temp.next
-
-
-        print(lis)
+                dups[node.data]=1
+                node=node.next
+        
+        return self.head
 
 
 ll=LinkedList()
@@ -63,8 +60,10 @@ ll.appendnode(7)
 ll.appendnode(2)
 ll.printnode()
 ll.deletenode(7)
+ll.appendnode(2)
 ll.printnode()
 ll.appendnode(5)
+ll.appendnode(9)
 ll.appendnode(2)
 ll.appendnode(3)
 ll.printnode()
