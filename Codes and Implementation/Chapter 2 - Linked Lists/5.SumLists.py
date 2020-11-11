@@ -26,31 +26,36 @@ class LinkedList:
         while Curr_Node!=None:
             print("(",Curr_Node.data,end=" ) --> ")
             Curr_Node=Curr_Node.next
-        print("\n")
+        
+    def conv(self):
+        curr_node=self.head
+        string=""
+        while curr_node is not None:
+            string+=str(curr_node.data)
+            curr_node=curr_node.next
+        string=int(string)
+        return(string)
 
-    def checkdups(self):
-        dups=[]
-        node=self.head
-        while node is not None:
-            if node.data not in dups:
-                dups.append(node.data)
-                prev=node
-                node=node.next                
-            else:
-                prev.next=node.next
-                node=node.next
+def adding_sum(num,num2):
+    return(num+num2)
 
 ll=LinkedList()
+ll2=LinkedList()
 
-ll.appendnode(6)
-ll.appendnode(3)
-ll.appendnode(8)
-ll.appendnode(1)
-ll.appendnode(3)
-ll.appendnode(2)
-ll.appendnode(7)
-ll.appendnode(1)
+for i in range(1,4):
+    ll.appendnode(i)
 ll.printnode()
-print("Removing Dups . . .\n")
-ll.checkdups()
-ll.printnode()
+print(ll.conv())
+
+for i in range(4,7):
+    ll2.appendnode(i)
+ll2.printnode()
+print(ll2.conv())
+
+result=str(adding_sum(ll.conv(),ll2.conv()))
+print("\nSum of",ll.conv(),"and",ll2.conv(),"is: ",result,"\n")
+
+ll3=LinkedList()
+for i in range(len(result)):
+    ll3.appendnode(result[i])
+ll3.printnode()

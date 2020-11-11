@@ -28,29 +28,26 @@ class LinkedList:
             Curr_Node=Curr_Node.next
         print("\n")
 
-    def checkdups(self):
-        dups=[]
-        node=self.head
-        while node is not None:
-            if node.data not in dups:
-                dups.append(node.data)
-                prev=node
-                node=node.next                
-            else:
-                prev.next=node.next
-                node=node.next
+    def kth_element(self,num):
+        if num == 0: return None
+        Curr_Node=self.head
+        for num in range(0,num-1):
+            Curr_Node=Curr_Node.next
+
+        while Curr_Node is not None:
+            print("(",Curr_Node.data,end=" ) --> ")
+            Curr_Node=Curr_Node.next
+        print("\n")
 
 ll=LinkedList()
 
-ll.appendnode(6)
-ll.appendnode(3)
-ll.appendnode(8)
 ll.appendnode(1)
-ll.appendnode(3)
 ll.appendnode(2)
-ll.appendnode(7)
-ll.appendnode(1)
+ll.appendnode(3)
+ll.appendnode(4)
+ll.appendnode(5)
 ll.printnode()
-print("Removing Dups . . .\n")
-ll.checkdups()
-ll.printnode()
+print("Priting from 2 to last element . . .")
+ll.kth_element(2)
+print("Priting from 4 to last element . . .")
+ll.kth_element(4)

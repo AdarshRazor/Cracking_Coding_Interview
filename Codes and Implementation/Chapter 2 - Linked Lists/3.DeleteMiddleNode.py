@@ -28,29 +28,23 @@ class LinkedList:
             Curr_Node=Curr_Node.next
         print("\n")
 
-    def checkdups(self):
-        dups=[]
-        node=self.head
-        while node is not None:
-            if node.data not in dups:
-                dups.append(node.data)
-                prev=node
-                node=node.next                
-            else:
-                prev.next=node.next
-                node=node.next
+    def deleteat(self,pos):
+        if pos==1:
+            self.head=self.head.next
+            return
+        Curr_Node=self.head
+        for pos in range(0,pos-1):
+            Prev_Node=Curr_Node
+            Curr_Node=Curr_Node.next
+        Prev_Node.next=Curr_Node.next
 
 ll=LinkedList()
 
-ll.appendnode(6)
-ll.appendnode(3)
-ll.appendnode(8)
 ll.appendnode(1)
-ll.appendnode(3)
 ll.appendnode(2)
-ll.appendnode(7)
-ll.appendnode(1)
+ll.appendnode(3)
+ll.appendnode(4)
+ll.appendnode(5)
 ll.printnode()
-print("Removing Dups . . .\n")
-ll.checkdups()
+ll.deleteat(3)
 ll.printnode()
