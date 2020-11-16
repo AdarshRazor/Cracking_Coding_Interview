@@ -38,3 +38,19 @@ root.right=Node(3)    #will assign to right node
 ```
 
 ---
+
+### Types of tress 
+
+1. Full Tree -> Each node have either 2 child node or no node.
+2. Complete Tree -> FIll the tree row by row.
+3. Perfect Tree -> A perfect tree is both complete and full.
+
+![alt text](https://github.com/AdarshRazor/Cracking_Coding_Interview/blob/main/Codes%20and%20Implementation/Img/1.png "types of trees")
+
+---
+
+### Traversal
+
+1. Preorder traversal -> node | left | right
+2. Inorder traversal -> left | node | right
+3. Postorder traversal -> left | right | node
