@@ -10,6 +10,12 @@ Unlike Arrays, Linked Lists, Stack and queues, which are linear data structures,
 
 ### Creating a simple node in binary tree
 
+To create a simple node in binary tree we need to follow few things.
+
+* Create a root node
+* Create a left child
+* Create a right child
+
 ```python
 class Node:
     def __init__(self,val):
@@ -21,6 +27,8 @@ class Node:
 ---
 
 ### Creating a simple binary tree
+
+While assigning the value to a binary tree we simply call the fuction and provide the value to it.
 
 ```python
 root=Node(1)    #will assign to root
