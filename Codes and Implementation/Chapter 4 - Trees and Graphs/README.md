@@ -54,3 +54,33 @@ root.right=Node(3)    #will assign to right node
 1. Preorder traversal -> node | left | right
 2. Inorder traversal -> left | node | right
 3. Postorder traversal -> left | right | node
+
+#### Preorder traversal
+
+```python
+def _printpre(self,curr_node):
+    if curr_node is not None:
+        print(str(curr_node.value))
+        self._printpre(curr_node.left)
+        self._printpre(curr_node.right)
+```
+
+#### Inorder traversal
+
+```python
+def _printpre(self,curr_node):
+    if curr_node is not None:
+        self._printpre(curr_node.left)
+        print(str(curr_node.value))
+        self._printpre(curr_node.right)
+```
+
+#### Postorder traversal
+
+```python
+def _printpre(self,curr_node):
+    if curr_node is not None:
+        self._printpre(curr_node.left)
+        self._printpre(curr_node.right)
+        print(str(curr_node.value))
+```
