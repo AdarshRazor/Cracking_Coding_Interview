@@ -1,3 +1,7 @@
+'''
+code to remove duplicates from an unsorted linked list.
+'''
+
 import os
 os.system('cls')
 

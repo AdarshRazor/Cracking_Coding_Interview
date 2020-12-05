@@ -6,6 +6,10 @@ class Node:
         self.data=data
         self.next=None
 
+'''
+find the kth to last element of a singly linked list.
+'''
+
 class LinkedList:
     def __init__(self):
         self.head=None

@@ -1,3 +1,7 @@
+'''
+delete the middle node
+'''
+
 import os
 os.system('cls')
 

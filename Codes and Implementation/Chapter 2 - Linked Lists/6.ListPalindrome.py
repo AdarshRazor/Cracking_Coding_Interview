@@ -1,3 +1,7 @@
+'''
+check if the linked list is palindrome or not
+'''
+
 import os
 os.system('cls')
 

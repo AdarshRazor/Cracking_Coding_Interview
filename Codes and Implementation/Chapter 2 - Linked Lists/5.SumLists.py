@@ -1,3 +1,15 @@
+'''
+code to sum the number  of 2 linked list and make the new linked list from the result
+
+(2)->(4)->(6) = 246
+(3)->(6)->(9)  = 369
+
+246 + 369 = 615
+(6)->(1)->(5)
+
+'''
+
+
 import os
 os.system('cls')
 
